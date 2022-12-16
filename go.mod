@@ -1,4 +1,4 @@
-module github.com/lyraproj/hiera
+module github.com/yanndegat/hiera
 
 require (
 	github.com/bmatcuk/doublestar v1.2.2
