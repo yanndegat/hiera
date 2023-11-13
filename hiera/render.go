@@ -10,7 +10,7 @@ import (
 	"github.com/lyraproj/dgo/util"
 	"github.com/lyraproj/dgo/vf"
 	"github.com/lyraproj/dgoyaml/yaml"
-	"github.com/lyraproj/hiera/api"
+	"github.com/yanndegat/hiera/api"
 )
 
 // RenderName is the name of the option value that describes how to render output

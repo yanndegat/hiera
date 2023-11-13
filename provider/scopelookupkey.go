@@ -2,8 +2,8 @@ package provider
 
 import (
 	"github.com/lyraproj/dgo/dgo"
-	"github.com/lyraproj/hiera/api"
 	"github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
 )
 
 // ScopeLookupKey is a function that performs a lookup in the current scope.

@@ -7,10 +7,10 @@ import (
 
 	"github.com/lyraproj/dgo/dgo"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/hiera"
-	"github.com/lyraproj/hiera/provider"
 	sdk "github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/hiera"
+	"github.com/yanndegat/hiera/provider"
 )
 
 // sayHello is a very simple "lookup_key" function that just returns the result of concatenating

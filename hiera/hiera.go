@@ -16,10 +16,10 @@ import (
 	"github.com/lyraproj/dgo/util"
 	"github.com/lyraproj/dgo/vf"
 	"github.com/lyraproj/dgoyaml/yaml"
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/explain"
-	"github.com/lyraproj/hiera/session"
 	"github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/explain"
+	"github.com/yanndegat/hiera/session"
 )
 
 // A CommandOptions contains the options given by to the CLI lookup command or a REST invocation.

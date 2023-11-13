@@ -13,16 +13,16 @@ import (
 
 	"github.com/lyraproj/dgo/streamer/pcore"
 
-	"github.com/lyraproj/hiera/config"
+	"github.com/yanndegat/hiera/config"
 
 	"github.com/lyraproj/dgo/dgo"
 	"github.com/lyraproj/dgo/loader"
 	"github.com/lyraproj/dgo/streamer"
 	"github.com/lyraproj/dgo/tf"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/provider"
 	"github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/provider"
 )
 
 type session struct {

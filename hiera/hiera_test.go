@@ -9,10 +9,10 @@ import (
 	require "github.com/lyraproj/dgo/dgo_test"
 	"github.com/lyraproj/dgo/typ"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/hiera"
-	"github.com/lyraproj/hiera/provider"
 	sdk "github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/hiera"
+	"github.com/yanndegat/hiera/provider"
 )
 
 var options = vf.Map(`path`, `./testdata/sample_data.yaml`)

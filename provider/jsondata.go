@@ -7,8 +7,8 @@ import (
 	"github.com/lyraproj/dgo/dgo"
 	"github.com/lyraproj/dgo/streamer"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
 	"github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
 )
 
 // JSONData is a data_hash provider that reads a JSON object from a file and returns it as a Map

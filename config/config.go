@@ -12,7 +12,7 @@ import (
 	"github.com/lyraproj/dgo/tf"
 	"github.com/lyraproj/dgo/util"
 	"github.com/lyraproj/dgoyaml/yaml"
-	"github.com/lyraproj/hiera/api"
+	"github.com/yanndegat/hiera/api"
 )
 
 type (

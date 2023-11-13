@@ -8,8 +8,8 @@ import (
 	"github.com/lyraproj/dgo/dgo"
 	"github.com/lyraproj/dgo/vf"
 	"github.com/lyraproj/dgoyaml/yaml"
-	"github.com/lyraproj/hiera/api"
 	"github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
 )
 
 // YamlData is a data_hash provider that reads a YAML hash from a file and returns it as a Map

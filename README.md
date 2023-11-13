@@ -1,8 +1,8 @@
 # Hiera lookup framework
 
-[![](https://goreportcard.com/badge/github.com/lyraproj/hiera)](https://goreportcard.com/report/github.com/lyraproj/hiera)
-[![](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/lyraproj/hiera)
-[![](https://github.com/lyraproj/hiera/workflows/Hiera%20Tests/badge.svg)](https://github.com/lyraproj/hiera/actions)
+[![](https://goreportcard.com/badge/github.com/yanndegat/hiera)](https://goreportcard.com/report/github.com/yanndegat/hiera)
+[![](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/yanndegat/hiera)
+[![](https://github.com/yanndegat/hiera/workflows/Hiera%20Tests/badge.svg)](https://github.com/yanndegat/hiera/actions)
 
 ## Introduction
 
@@ -22,60 +22,18 @@ Hiera uses the concept of "managing by exception": you design a *hierarchy* of d
 
 To install the module under $GOPATH/src:
 
-    go get github.com/lyraproj/hiera
+    go get github.com/yanndegat/hiera
 
 #### Install the lookup binary
 
 Install the lookup binary under $GOPATH/bin:
 
-    go install github.com/lyraproj/hiera/lookup
+    go install github.com/yanndegat/hiera/lookup
 
 #### Run the binary
 
     lookup --help
 
-### Containerized execution
-
-#### Download the container
-
-You can pull the latest containerized version from docker hub:
-
-    docker pull lyraproj/hiera:latest
-
-The docker repository with previous tags is viewable at https://hub.docker.com/r/lyraproj/hiera .
-
-#### Run the container
-
-The docker image accepts environment variables to override default behaviour:
-
-* *port* - which port to listen on inside the container (default: 8080)
-* *loglevel* - how much logging to do (default: error, possible values: error, warn, info, debug)
-* *config* - path to a hiera.yaml configuration (default: /hiera/hiera.yaml)
-
-Make sure to pass the port on your host through to the container. A directory with a hiera configuration and data files (see below) should be mounted under `/hiera` in the image using a bind mount:
-
-    docker run -p 8080:8080 --mount type=bind,src=$HOME/hiera,dst=/hiera lyraproj/hiera:latest
-
-#### Query the container
-
-The web service in the container responds to the `/lookup` endpoint with an additional path element of which key to look up. Nested keys can be looked up using dot-separation notation. Given a yaml map without any overrides like:
-
-    aws:
-      tags:
-        Name:       lyra-sample
-        created_by: lyra
-        department: engineering
-        project:    incubator
-        lifetime:   1h
-
-You can get back the entire map or specific parts of it:
-
-    $ curl http://localhost:8080/lookup/aws
-    {"tags":{"Name":"lyra-sample","created_by":"lyra","department":"engineering","lifetime":"1h","project":"incubator"}}
-    $ curl http://localhost:8080/lookup/aws.tags
-    {"Name":"lyra-sample","created_by":"lyra","department":"engineering","lifetime":"1h","project":"incubator"}
-    $ curl http://localhost:8080/lookup/aws.tags.department
-    "engineering"
 
 ## Pass values for interpolation
 

@@ -10,7 +10,7 @@ import (
 	"github.com/lyraproj/dgo/tf"
 	"github.com/lyraproj/dgo/util"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
+	"github.com/yanndegat/hiera/api"
 )
 
 type mappedPaths struct {
@@ -51,7 +51,6 @@ var mappedPathsType = tf.NewNamed(
 // key: Variable name to use when resolving template
 //
 // template: Template containing interpolation of the key
-//
 func NewMappedPaths(sourceVar, key, template string) api.Location {
 	return &mappedPaths{sourceVar: sourceVar, key: key, template: template}
 }

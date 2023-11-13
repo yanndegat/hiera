@@ -6,9 +6,9 @@ import (
 
 	"github.com/lyraproj/dgo/dgo"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/hiera"
 	sdk "github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/hiera"
 )
 
 func ExampleServerContext_CachedValue() {

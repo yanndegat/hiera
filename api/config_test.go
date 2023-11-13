@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/hiera"
 	"github.com/stretchr/testify/require"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/hiera"
 )
 
 func TestConfigLookup_default(t *testing.T) {

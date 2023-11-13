@@ -5,12 +5,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/lyraproj/hiera/config"
+	"github.com/yanndegat/hiera/config"
 
 	"github.com/lyraproj/dgo/dgo"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
 	"github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
 )
 
 // ModulePath is the session option that the ModuleLookupKey function uses as the module path. The

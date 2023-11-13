@@ -13,13 +13,13 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/lyraproj/hiera/config"
+	"github.com/yanndegat/hiera/config"
 
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/hiera"
-	"github.com/lyraproj/hiera/provider"
 	sdk "github.com/lyraproj/hierasdk/hiera"
 	"github.com/spf13/cobra"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/hiera"
+	"github.com/yanndegat/hiera/provider"
 )
 
 func main() {

@@ -6,7 +6,7 @@ import (
 
 	"github.com/lyraproj/dgo/dgo"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
+	"github.com/yanndegat/hiera/api"
 )
 
 type (

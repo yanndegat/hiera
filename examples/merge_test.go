@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/hiera"
-	"github.com/lyraproj/hiera/merge"
-	"github.com/lyraproj/hiera/provider"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/hiera"
+	"github.com/yanndegat/hiera/merge"
+	"github.com/yanndegat/hiera/provider"
 )
 
 // TestMerge_default tests the default merge strategy which is "first found"

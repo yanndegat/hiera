@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/lyraproj/hiera/api"
+	"github.com/yanndegat/hiera/api"
 )
 
 type (

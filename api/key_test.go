@@ -6,7 +6,7 @@ import (
 
 	require "github.com/lyraproj/dgo/dgo_test"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
+	"github.com/yanndegat/hiera/api"
 )
 
 func ExampleNewKey_simple() {

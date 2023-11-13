@@ -3,9 +3,9 @@ package provider
 import (
 	"github.com/lyraproj/dgo/dgo"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/merge"
 	"github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/merge"
 )
 
 // LookupKeyFunctions is the key that the MuxLookupKey function will use when finding the functions

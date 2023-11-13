@@ -3,7 +3,7 @@ package merge
 import (
 	"github.com/lyraproj/dgo/dgo"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
+	"github.com/yanndegat/hiera/api"
 )
 
 // Deep will merge the values 'a' and 'b' if both values are hashes or both values are

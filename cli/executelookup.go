@@ -3,7 +3,7 @@ package cli
 import (
 	"bytes"
 
-	"github.com/lyraproj/hiera/hiera"
+	"github.com/yanndegat/hiera/hiera"
 )
 
 // ExecuteLookup performs a lookup using the CLI. It's primarily intended for testing purposes

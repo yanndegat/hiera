@@ -2,8 +2,8 @@ package session
 
 import (
 	"github.com/lyraproj/dgo/dgo"
-	"github.com/lyraproj/hiera/api"
 	"github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
 )
 
 type serverCtx struct {

@@ -3,8 +3,8 @@ package provider
 import (
 	"github.com/lyraproj/dgo/dgo"
 	"github.com/lyraproj/dgo/vf"
-	"github.com/lyraproj/hiera/api"
 	"github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
 )
 
 // YamlDataKey is the key that the YamlLookupKey function uses for its cache.

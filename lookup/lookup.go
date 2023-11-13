@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/lyraproj/hiera/cli"
+	"github.com/yanndegat/hiera/cli"
 )
 
 func main() {

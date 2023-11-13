@@ -5,7 +5,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/lyraproj/hiera/merge"
+	"github.com/yanndegat/hiera/merge"
 
 	"github.com/lyraproj/dgo/vf"
 
@@ -13,9 +13,9 @@ import (
 
 	"github.com/lyraproj/dgo/dgo"
 	"github.com/lyraproj/dgo/util"
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/config"
 	"github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/config"
 )
 
 const hieraConfigsPrefix = `HieraConfig:`

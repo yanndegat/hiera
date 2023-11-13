@@ -7,10 +7,10 @@ import (
 
 	"github.com/lyraproj/dgo/vf"
 
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/explain"
-	"github.com/lyraproj/hiera/hiera"
-	"github.com/lyraproj/hiera/provider"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/explain"
+	"github.com/yanndegat/hiera/hiera"
+	"github.com/yanndegat/hiera/provider"
 )
 
 // TestExplain shows how to provide an explainer to the invocation used when performing a lookup

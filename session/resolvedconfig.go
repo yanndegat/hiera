@@ -4,9 +4,9 @@ import (
 	"strings"
 
 	"github.com/lyraproj/dgo/dgo"
-	"github.com/lyraproj/hiera/api"
-	"github.com/lyraproj/hiera/internal"
-	"github.com/lyraproj/hiera/merge"
+	"github.com/yanndegat/hiera/api"
+	"github.com/yanndegat/hiera/internal"
+	"github.com/yanndegat/hiera/merge"
 )
 
 type (

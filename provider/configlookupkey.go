@@ -2,8 +2,8 @@ package provider
 
 import (
 	"github.com/lyraproj/dgo/dgo"
-	"github.com/lyraproj/hiera/api"
 	"github.com/lyraproj/hierasdk/hiera"
+	"github.com/yanndegat/hiera/api"
 )
 
 // ConfigLookupKey performs a lookup based on a hierarchy of providers that has been specified
