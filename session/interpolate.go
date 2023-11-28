@@ -160,12 +160,12 @@ func (ic *ivContext) InterpolateString(str string, allowMethods bool) (dgo.Value
 				val := ic.Lookup(api.NewKey(expr), nil)
 				switch encodeMethod {
 				case jsonEncode:
-					if val.Equals(vf.Nil) {
+					if val == nil || val.Equals(vf.Nil) {
 						return `null`
 					}
 					return string(json.MarshalJSON(val, nil))
 				case yamlEncode:
-					if val.Equals(vf.Nil) {
+					if val == nil || val.Equals(vf.Nil) {
 						return ``
 					}
 					bs, err := yaml.Marshal(val)
