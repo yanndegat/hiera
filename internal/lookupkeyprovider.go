@@ -28,6 +28,7 @@ func (dh *lookupKeyProvider) LookupKey(key api.Key, ic api.Invocation, location 
 	value := dh.providerFunction(ic)(ic.ServerContext(opts), root)
 	if value != nil {
 		ic.ReportFound(root, value)
+		value = ic.Interpolate(value, true)
 	} else {
 		ic.ReportNotFound(root)
 	}

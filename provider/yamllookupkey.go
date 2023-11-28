@@ -19,11 +19,13 @@ func YamlLookupKey(pc hiera.ProviderContext, key string) dgo.Value {
 		return nil
 	}
 	data, ok := sc.CachedValue(YamlDataKey)
+	iv := sc.Invocation()
 	if !ok {
-		iv := sc.Invocation()
 		data = YamlData(iv.ServerContext(vf.Map(`path`, iv.SessionOptions().Get(`path`))))
 		sc.Cache(YamlDataKey, data)
 	}
 	hash, _ := data.(dgo.Map)
-	return hash.Get(key)
+	value := hash.Get(key)
+	value = iv.Interpolate(value, true)
+	return value
 }

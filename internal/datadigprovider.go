@@ -26,6 +26,7 @@ func (dh *dataDigProvider) LookupKey(key api.Key, ic api.Invocation, location ap
 	value := dh.providerFunction(ic)(ic.ServerContext(opts), vf.Values(key.Parts()...))
 	if value != nil {
 		ic.ReportFound(key.Source(), value)
+		value = ic.Interpolate(value, true)
 		value = key.Bury(value)
 	} else {
 		ic.ReportNotFound(key)

@@ -11,7 +11,7 @@ import (
 	"github.com/yanndegat/hiera/api"
 )
 
-var iplPattern = regexp.MustCompile(`%{[^}]*}`)
+var iplPattern = regexp.MustCompile(`%\{(?:[^{}]+|%\{(?:[^{}]+)*\})*\}`)
 var emptyInterpolations = map[string]bool{
 	``:     true,
 	`::`:   true,
