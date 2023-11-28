@@ -76,6 +76,18 @@ func TestLookup_interpolateAlias(t *testing.T) {
 	})
 }
 
+func TestLookup_interpolateAliasYaml(t *testing.T) {
+	testOneLookup(t, func(iv api.Invocation) {
+		require.Equal(t, "- one\n- two\n- three\n", hiera.Lookup(iv, `array_yaml`, nil, options))
+	})
+}
+
+func TestLookup_interpolateAliasJson(t *testing.T) {
+	testOneLookup(t, func(iv api.Invocation) {
+		require.Equal(t, `["one","two","three"]`, hiera.Lookup(iv, `array_json`, nil, options))
+	})
+}
+
 func TestLookup_interpolateBadAlias(t *testing.T) {
 	require.NotOk(t, `'alias'/'strict_alias' interpolation is only permitted if the expression is equal to the entire string`,
 		hiera.TryWithParent(context.Background(), provider.YamlLookupKey, options, func(hs api.Session) error {

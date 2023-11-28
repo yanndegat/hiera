@@ -3,6 +3,8 @@ array:
   - one
   - two
   - three
+array_yaml: "%{alias('array')|yaml}"
+array_json: "%{alias('array')|json}"
 hash:
   int: 1
   string: one
