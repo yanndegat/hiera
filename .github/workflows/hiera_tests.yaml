@@ -1,7 +1,6 @@
-name: Hiera Tests
+name: Tests
 on: [push, pull_request]
 jobs:
-
   test:
     name: Test Linux
     runs-on: ubuntu-latest
