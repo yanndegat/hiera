@@ -2,9 +2,6 @@
 builds:
 - main: ./lookup
   binary: 'lookup_{{ .Version }}'
-  checksum:
-    name_template: 'lookup_{{ .Version }}_SHA256SUMS'
-    algorithm: sha256
   env:
     - CGO_ENABLED=0
   goos:
